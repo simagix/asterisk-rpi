@@ -8,5 +8,6 @@ Install Asterisk/FreePBX on Raspberry PI with Google Voice
 ```
 disable_ipv6='true'
 ```
+- Install/configure exim4, http://www.sbprojects.com/projects/raspberrypi/exim4.php
 - Follow instructions from http://www.raspberry-asterisk.org/documentation/
 - Configure Google Voice as a trunk on FreePBX, Connectivity->Google Voice.  Follow http://jermsmit.com/google-voice-setup-on-freepbx-and-asterisk-version-11/
