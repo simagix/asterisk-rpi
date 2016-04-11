@@ -46,3 +46,8 @@ sudo rpi-update 41f8b4812ad653abf321b8c54cb4bee57ebdb129
 reboot
 iwlist wlan0 channel
 ```
+Add to startup script
+```
+echo "/sbin/iwconfig wlan0 power off" > /etc/init.d/wireless_power_off
+update-rc.d /etc/init.d/wireless_power_off defaults
+```
