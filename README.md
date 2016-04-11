@@ -32,15 +32,17 @@ reboot
 ```
 For Raspberry PI 3
 ```
-# enable channel 12 and 13
+# turn off power management
+sudo iwconfig wlan0 power off
+```
+Enable channel 12 and 13
+```
 iwlist wlan0 channel
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get dist-upgrade
 sudo rpi-update
 sudo rpi-update 41f8b4812ad653abf321b8c54cb4bee57ebdb129
-iwlist wlan0 channel
-# turn off power management
-sudo iwconfig wlan0 power off
 reboot
+iwlist wlan0 channel
 ```
